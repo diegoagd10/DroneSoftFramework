@@ -14,18 +14,15 @@ namespace DroneSoftFramework.Api
 {
     public abstract class DroneStartup
     {
+        public abstract void Configuration(IAppBuilder app);
+
         protected void Configuration(IAppBuilder app, IKernel kernel)
         {
             HttpConfiguration config = new HttpConfiguration();
 
-            // Getting setups from webconfig
-            string apiVersion = ConfigurationManager.AppSettings["ApiVersion"] ?? "v1";
+            // Map http routes
+            config.MapHttpAttributeRoutes();
 
-            // Web API Routes
-            config.Routes.MapHttpRoute(
-                "DefaulController",
-                $"{apiVersion}/", new { controller = "Default" });
-            
             // Enable CORS
             app.UseCors(CorsOptions.AllowAll);
 
