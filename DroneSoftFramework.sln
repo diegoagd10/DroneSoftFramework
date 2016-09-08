@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneSoftFramework.Database.Relational", "DroneSoftFramework.Database.Relational\DroneSoftFramework.Database.Relational.csproj", "{54F7F522-6974-49E4-B3F6-F2A9B586DE07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneSoftFramework.Database.Mongo", "DroneSoftFramework.Database.Mongo\DroneSoftFramework.Database.Mongo.csproj", "{A1E55383-C6DF-45A8-A82B-7B81A30ED02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroneSoftFramework.Api", "DroneSoftFramework.Api\DroneSoftFramework.Api.csproj", "{97F18286-67CF-4663-9228-CCCCB284B988}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54F7F522-6974-49E4-B3F6-F2A9B586DE07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F7F522-6974-49E4-B3F6-F2A9B586DE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F7F522-6974-49E4-B3F6-F2A9B586DE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F7F522-6974-49E4-B3F6-F2A9B586DE07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E55383-C6DF-45A8-A82B-7B81A30ED02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E55383-C6DF-45A8-A82B-7B81A30ED02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E55383-C6DF-45A8-A82B-7B81A30ED02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E55383-C6DF-45A8-A82B-7B81A30ED02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F18286-67CF-4663-9228-CCCCB284B988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F18286-67CF-4663-9228-CCCCB284B988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F18286-67CF-4663-9228-CCCCB284B988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F18286-67CF-4663-9228-CCCCB284B988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
