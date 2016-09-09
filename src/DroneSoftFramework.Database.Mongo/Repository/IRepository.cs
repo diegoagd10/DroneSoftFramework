@@ -17,9 +17,7 @@ namespace DroneSoftFramework.Database.Mongo.Repository
         Task<IList<TEntity>> InsetManyAsync(IList<TEntity> entities);
 
         Task<TEntity> ModifyAsync(Expression<Func<TEntity, bool>> predicate, TEntity entity);
-
-        Task<IList<TEntity>> ModifyManyAsync(Expression<Func<TEntity, bool>> predicate, IList<TEntity> entities);
-
+        
         Task<bool> DeleteAsync(Expression<Func<TEntity, bool>> predicate);
 
         Task<bool> DeleteManyAsync(Expression<Func<TEntity, bool>> predicate);

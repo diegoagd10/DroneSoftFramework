@@ -83,19 +83,7 @@ namespace DroneSoftFramework.Database.Mongo.Repository
                 return entity;
             return null;
         }
-
-        public async Task<IList<TEntity>> ModifyManyAsync(Expression<Func<TEntity, bool>> predicate, IList<TEntity> entities)
-        {
-            IList<TEntity> result = new List<TEntity>();
-
-            foreach (var entity in entities)
-            {
-                var entityResult = await ModifyAsync(predicate, entity);
-                if (entityResult != null) result.Add(entityResult); 
-            }
-            return result;
-        }
-
+        
         #endregion
     }
 }
